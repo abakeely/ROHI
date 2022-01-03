@@ -1,0 +1,165 @@
+Codes :Libell&eacute;s
+500 :Solde salaire traitement
+501 :Compl&eacute;ment sp&eacute;cial de salaire
+502 :Majoration 78.058
+503 :Compl&eacute;ment sp&eacute;cial de salaire
+504 :Majoration 79.366 
+505 :Solde sp&eacute;ciale progressive
+506 :Solde sp&eacute;ciale progressive
+507 :Solde sp&eacute;ciale et prime entret.
+512 :Indt&eacute; forfaitaire r&eacute;sidence
+515 :Indt&eacute; int&eacute;rimaire justice
+517 :Indt&eacute; forfaitaire enseignement
+518 :Heures de suppl&eacute;ance
+519 :Indt&eacute; charges administratives
+520 :Indt&eacute; Respons. P&eacute;cun. Gestion 
+523 :Liste civile
+524 :Indt&eacute; chiffre travaux suppl&eacute;m.
+526 :Indt&eacute; Ministre
+528 :Indt&eacute; repr&eacute;sentation nourriture
+530 :Indt&eacute; de risques
+535 :Frais de poursuite
+536 :Charges militaires ancien
+537 :Indt&eacute; forfaitaire stagiaire
+538 :Remises
+539 :Travaux et heures suppl&eacute;mentaires
+540 :Indt&eacute; observ. M&eacute;t&eacute;o et limnime
+541 :Indt&eacute; huissier audiencier
+543 :Indt&eacute; traduction langue
+544 :Indt&eacute; de fonction
+545 :Indt&eacute; visite navire
+546 :Indt&eacute; arraisonnement navire
+547 :Indt&eacute; pour vacation 
+548 :R&eacute;compense act. Para post scol.
+549 :Indt&eacute; pilotage lamanage
+550 :Indt&eacute; sp&eacute;cial OPJ
+551 :Indt&eacute; services a&eacute;riens
+553 :Indt&eacute; de polyvalence
+554 :Prime technique ou rendement
+555 :Prime d'engagement rengagement
+556 :Protection a&eacute;rienne
+557 :Indt&eacute; inspecteur navig. Maritime
+558 :Commission d'examen
+559 :Prime allocation mens.forfait.
+560 :Emoluments hospitaliers
+561 :Prime &eacute;tudes militaires super.
+562 :Indt&eacute; m&eacute;decins militaires
+563 :Indt&eacute; services rendus
+570 :Indt&eacute; logement ameublement
+580 :Indt&eacute; de suj&eacute;tion
+581 :Indt&eacute; de sp&eacute;cialisation informat
+582 :Indt&eacute; de sp&eacute;cialisation finances
+583 :Indt&eacute; compensatrice
+600 :R&eacute;gularisation
+603 :Indt&eacute; Licenciement
+610 :Allocations familiales
+611 :Suppl&eacute;m. familial traitement
+612 :Remb. valeur bagages &eacute;gar&eacute;s
+614 :Remb. frais hospitalisation 
+615 :Remb.frais m&eacute;dicaux
+616 :Frais de d&eacute;placement temporaire
+617 :Indt&eacute; Repr&eacute;sentation transport 
+618 :Frais d&eacute;placement d&eacute;finitif
+621 :Indt&eacute; absence temporaire
+622 :Indt&eacute; installation provisoire
+623 :D&eacute;placement perception imp&ocircts
+624 :Indt&eacute; sp&eacute;ciale oblog.cont.
+625 :Indt&eacute; session ou d&eacute;placement
+626 :Indt&eacute; chert&eacute; de vie
+629 :Repr&eacute;sentation 
+630 :Repr&eacute;s.gens de maison
+641 :Indt&eacute; accident travail
+642 :Indt&eacute; de cycliste
+644 :Frais de scolarit&eacute;
+645 :Indt&eacute; entretien eclairage
+646 :Charges militaires
+647 :Allocation pr&eacute;natale
+648 :Prime &agrave; la naissance
+649 :D&eacute;l&eacute;gation de solde
+650 :Indt&eacute; costume &eacute;quip.habilt
+652 :Indt&eacute; travail insalubre
+657 :Indt&eacute; s&eacute;paration stagiaire
+671 :Bourse
+701 :Ret. pour oeuvres sociales 6
+702 :Ret. Cercle engi Fort-Duchesne
+703 :Ret. Cercle SZP Ambositra
+704 :Ret. Cercle ESZP Moramanga
+705 :Ret. Cercle RESEP Antananarivo
+706 :Retenue imp&ocirct RSA 1
+707 :Ret. Responsabilit&eacute; Tr&eacute;sor 9
+710 :Ret. Logement budget g&eacute;n&eacute;ral 5
+711 :Ret. Ameublement budget g&eacute;n&eacute;ral 5
+712 :Ret. Fonds commun 9
+713 :Ret. Frigidaire budget g&eacute;n&eacute;ral 5
+714 :Ret. Eau et &eacute;lectricit&eacute; 9
+715 :Ret. Hopital 2
+716 :St&eacute; coop. Consom. Tamatave 9
+718 :Ret. SEIMAD Fianarantsoa 3
+719 :Ret. SEIMAD Mananjary 3
+720 :Ret. D&eacute;l&eacute;gation de solde 9
+721 :Ordre de recette Budget G&eacute;n&eacute;ral 9
+722 :Ordre de recette Tana 9
+723 :Ordre de recette Fianarantsoa 9
+724 :Ordre de recette Majunga 9
+725 :Ordre de recette Tamatave 9
+726 :Ordre de recette Tul&eacute;ar 9
+727 :Ordre de recette Di&eacute;go-Suarez 9
+728 :Ret. SEIMAD Manakara 3
+729 :Ret. Tamatave 3
+740 :Ret. Avance de solde 9
+741 :Ret. Avance de d&eacute;placement 9
+742 :Ret. Cession de salaire 9
+743 :Ret. Mutuelle 9
+744 :Ret. Collecte d&eacute;c&egrave;s 9
+745 :Ret. Caisse centrale credagric 9
+746 :Ret. Abonnement transport 9
+747 :Ret. Etude nourriture logement 9
+748 :Ret. Biblioth&egrave;que 9
+749 :Ret. Bourse stagiaire 9
+750 :Ret. SEIMAD Majunga 3
+751 :Avance 75 Tr&eacute;sor Tana 9
+752 :Avance 75 Tr&eacute;sor Fianarantsoa 9
+753 :Avance 75 Tr&eacute;sor Tamatave 9
+754 :Avance 75 Tr&eacute;sor Majunga 9
+755 :Avance 75 Tr&eacute;sor Tul&eacute;ar 9
+756 :Ret. Achat v&eacute;hicule administrat. 9
+757 :Avance 75 Tr&eacute;sor Di&eacute;go-Suarez 9
+758 :Ret. Cession effets 9
+759 :Imputation 9
+760 :Ret. SEIMAD Tul&eacute;ar 3
+761 :Ret. Achat automobile 9
+762 :Ret. SEIMAD Di&eacute;go-Suarez 3
+764 :Opposition Tr&eacute;sor 7 
+765 :Ret. SEIMAD 3
+769 :Ret. Office habitat &eacute;conomique 9
+770 :Ret. Pension retraite CRCM 8
+772 :Ret. Pension retraite CPR 8
+773 :Ret. S&eacute;curit&eacute; sociale 8
+776 :Ret. Pi Caisse retraite PNAC 8
+779 :Ret. PI Validation service 8
+780 :Ret. Logement PCE Tana 5
+781 :Ret. Ameublement PCE Tana 5
+872 :Ret. frigidaire PCE Tana 5
+783 :Ret. Logement PCE Fianarantsoa 5 
+784 :Ret. Ameubleument PCE Fianarantsoa 5
+785 :Ret. Frigidaire PCE Fianarantsoa 5
+786 :Ret. Logement PCE Tamatave 5 
+787 :Ret. Ameubleument PCE Tamatave 5
+788 :Ret. Frigidaire PCE Tamatave 5
+789 :Ret. Logement PCE Majunga 5 
+790 :Ret. Ameubleument PCE Majunga 5
+791 :Ret. Frigidaire PCE Majunga 5
+792 :Ret. Logement PCE Tul&eacute;ar 5 
+793 :Ret. Ameubleument PCE Tul&eacute;ar 5
+794 :Ret. Frigidaire PCE Tul&eacute;ar 5
+795 :Ret. Logement PCE Di&eacute;go-Suarez 5 
+796 :Ret. Ameubleument PCE Di&eacute;go-Suarez 5
+797 :Ret. Frigidaire PCEDi&eacute;go-Suarez 5
+798 :Ret. Contrib. Entret. Logement 5 
+800 :PC. Validation service 5
+801 :PC. Retraite CRCM 8
+802 :PC. Retraite CPR 8
+803 :PC. Caisse retraite PNAC 8
+804 :PC. CNaPS 8
+805 :PC. Accident travail CNaPS 8
+806 :PC. Charges famille CNaPS 8

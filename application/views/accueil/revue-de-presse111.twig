@@ -1,0 +1,252 @@
+{include_php file=$zHeader }
+<section id="rightContent" class="clearfix">
+	{include_php file=$zRight}
+</section>
+<section id="mainContent" class="clearfix">
+	<div id="leftContent">
+		{include_php file=$zLeft}	
+	</div>
+	<div id="innerContent">
+		<div id="ContentBloc">
+		<link rel="stylesheet" href="{$zBasePath}assets/accueil/css/components.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="{$zBasePath}assets/accueil/css/burgundy.css">
+		<link rel="stylesheet" type="text/css" href="{$zBasePath}assets/accueil/css/comp-burgundy.css">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="malefaka dropdown active">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+								Catégorie
+								<i class="ace-icon la la-caret-down bigger-110 width-auto"></i>
+							</a>
+							<ul class="dropdown-menu">
+								{foreach from=$oData.toCategorieRc item=toCategorieRc }
+								<li>
+									<a categorieId="{toCategorieRc.categorieRc_id}" href="{$zBasePath}accueil/revuedepresse/{$toCategorieRc.categorieRc_id}" class="SelectCompte" style="cursor:pointer" aria-expanded="true">{$toCategorieRc.categorieRc_libelle}</a>
+								</li>
+								{/foreach}
+								<li>
+									<a categorieId="0" href="{$zBasePath}accueil/communique" class="SelectCompte" style="cursor:pointer" aria-expanded="true">Tous</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="malefaka" idActive="twocol1">
+							<a data-toggle="dropdown" class="dropdown-toggle active" href="#">
+							<i class="ace-icon la la-list"></i>
+							</a>
+						</li>
+						<li class="malefaka" idActive="twocol2">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="ace-icon la la-table"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- /.navbar-container -->
+		<div id="container" class="twocol" style="overflow: hidden;padding-right: 20px;">
+				<div class="parsys centerPar">
+					<div class="tabs section">
+					<ul class="nav nav-tabs revue " role="tablist">
+							<li class=""><a href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#centerPar_tabshome0" role="tab" data-toggle="tab">2016 </a></li>
+
+							<li class="active"><a href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#centerPar_tabshome1" role="tab" data-toggle="tab">2017 </a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+
+
+						<div class="tab-pane" id="centerPar_tabshome0">
+							<span class="tab-count"> </span><div class="2 parsys"><div class="accordion section">
+
+							<div class="panel-group" id="accordioncenterPar_tabs_content_par_2_accordion">
+								<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a data-toggle="collapse" class="active collapsed" data-parent="#accordioncenterPar_tabs_content_par_2_accordion" href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#collapsecenterPar_tabs_content_par_2_accordionhome0">Janvier</a>
+											</h4>
+										</div>
+
+										<div id="collapsecenterPar_tabs_content_par_2_accordionhome0" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												<div class="parsys Pane_one_title0">
+													<div class="parbase section list">
+														<link rel="stylesheet" href="{$zBasePath}assets/accueil/css/clientlibs.css" type="text/css">
+														<script type="text/javascript" src="{$zBasePath}assets/accueil/js/clientlibs.js"></script>
+
+														<div class="liststyle4">
+															
+															<ul>
+																<li>
+																<a href="">19e baromètre PwC sur l'opinion des dirigeants 
+																</a>
+																</li>
+																<li>
+																<a href="">64% des Français se déclarent prêts à souscrire à une cyber-assurance 
+																</a>
+																</li>
+																<li>
+
+																<a href="">Les villes allemandes toujours plus attractives aux yeux des investisseurs immobiliers en 2016 
+																</a>
+																</li>
+																<li>
+
+																<a href="">Le marché français de la publicité digitale atteint 3, 216 milliards d’euros de chiffre d’affaires net sur l’ensemble de l'année 2015, en progression de 6% par rapport à 2014
+																</a>
+																</li>
+
+															</ul>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div style="clear: both"></div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane active" id="centerPar_tabshome1">
+						<span class="tab-count"> </span><div class="3 parsys"><div class="accordion section">
+						
+						<div class="panel-group" id="accordioncenterPar_tabs_content_par_2_accordion_content_par_3_accordion">
+								<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a data-toggle="collapse" class="active" data-parent="#accordioncenterPar_tabs_content_par_2_accordion_content_par_3_accordion" href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome0">Janvier</a>
+											</h4>
+										</div>
+
+										<div id="collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome0" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<div class="parsys Pane_one_title0"><div class="parbase section list">
+
+												<link rel="stylesheet" href="{$zBasePath}assets/accueil/css/clientlibs.css" type="text/css">
+												<script type="text/javascript" src="{$zBasePath}assets/accueil/js/clientlibs.js"></script>
+												<div class="liststyle4">
+													
+													<ul>
+														<li>
+														<a href="">Le marché français de la publicité digitale atteint 3, 453 M€ de chiffre d’affaires net sur l’ensemble de l’année 2016, en progression de 7% par rapport à 2015 - 26/01/2017
+														</a>
+														</li>
+														<li>
+														<a href="">Prévisions macroéconomiques de PwC pour l’année 2017 - 19/01/2017
+														</a>
+														</li>
+														<li>
+														<a href="">20e baromètre PwC sur l’opinion des dirigeants d’entreprise - 16/01/2017
+														</a>
+														</li>
+														<li>
+														<a href="">PwC annonce la création d’une nouvelle équipe mondiale de conseil fiscal aux entreprises pour GE - 14/01/2017
+														</a>
+														</li>
+													</ul>
+
+													</div>
+												</div>
+
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+
+							
+
+								<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" class="collapsed" data-parent="#accordioncenterPar_tabs_content_par_2_accordion_content_par_3_accordion" href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome1">Février</a>
+											</h4>
+										</div>
+
+										<div id="collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome1" class="panel-collapse collapse ">
+											<div class="panel-body">
+												<div class="parsys Février1">
+													<div class="parbase section list">
+													<link rel="stylesheet" href="{$zBasePath}assets/accueil/css/clientlibs.css" type="text/css">
+													<script type="text/javascript" src="{$zBasePath}assets/accueil/js/clientlibs.js"></script>
+
+													<div class="liststyle4">
+													
+														<ul>
+															<li>
+
+															<a href="">Les transactions franco-brésiliennes ont connu une année 2016 record avec un total de 29 transactions - 28/02/2017
+															</a>
+															</li>
+
+														</ul>
+
+													</div>
+												</div>
+
+											</div>	
+										</div>
+									</div>
+								</div>
+
+							
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" class="active collapsed" data-parent="#accordioncenterPar_tabs_content_par_2_accordion_content_par_3_accordion" href="http://www.pwc.fr/fr/espace-presse/communiques-de-presse.html#collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome2">Mars</a>
+										</h4>
+									</div>
+
+									<div id="collapsecenterPar_tabs_content_par_2_accordion_content_par_3_accordionhome2" class="panel-collapse collapse" style="height: 0px;">
+										<div class="panel-body">
+											<div class="Mars2 parsys"><div class="parbase section list">
+
+										<link rel="stylesheet" href="{$zBasePath}assets/accueil/css/clientlibs.css" type="text/css">
+										<script type="text/javascript" src="{$zBasePath}assets/accueil/js/clientlibs.js"></script>
+											<div class="liststyle4">
+												
+												<ul>
+													<li>
+													<a href="">Blockchain, entre opportunités et défis pour les acteurs traditionnels de l’assurance - 28/03/2017
+													</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										</div>
+
+								
+										</div>
+									</div>
+								</div>
+
+
+							<div style="clear: both"></div>
+						</div>
+					</div>
+					</div>  
+				</div>
+		</div>
+
+		<!-- viva -->
+		</div>	
+		</div>	
+		</div>		
+	
+		<!---------   --------------->	
+		</div>
+		<div id="calendar"></div>
+	</div>
+</section>
+{include_php file=$zFooter}

@@ -1,0 +1,806 @@
+\documentclass[11pt,a4paper, final, twoside]{article}
+\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}\usepackage{amsmath,amssymb,amsfonts,latexsym,amsthm}
+\usepackage{amscd}
+
+
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage{lmodern}
+\usepackage{mathrsfs}
+\usepackage{keyval}
+\usepackage{hhline,euscript,delarray,dsfont}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{keyval}
+%\usepackage{hhline,euscript,delarray}
+\usepackage{geometry}\usepackage{graphicx}
+\usepackage{lscape}
+
+
+\newtheorem{thm}{Théorème}[section]
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{theorem}[thm]{Theorem}
+\newtheorem{proposition}[thm]{Proposition}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{propriete}[thm]{Propriété}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{remarque}[thm]{Remarque}
+\newtheorem{exemple}[thm]{Exemple}
+\newtheorem{thebibliography1}[thm]{References}
+
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{latexsym}
+\usepackage{amsthm}
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{array}
+\usepackage{afterpage}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=black, citecolor=black]{hyperref}
+\usepackage{color}
+\setcounter{MaxMatrixCols}{10}
+
+\renewcommand{\thefootnote}{}
+\setlength{\oddsidemargin}{1pt} \setlength{\evensidemargin}{1pt}
+\setlength{\hoffset}{-1in} \addtolength{\hoffset}{35mm}
+\setlength{\textwidth}{140mm} 
+\setlength{\marginparsep}{0pt} \setlength{\marginparwidth}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\voffset}{-2in} \addtolength{\voffset}{20mm}
+\setlength{\textheight}{200mm}
+\setlength{\headheight}{45mm}
+\setlength{\headsep}{5mm}
+\setlength{\footskip}{15mm}
+\pagestyle{fancy}
+\fancyhead{} \fancyfoot{}
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \lhead{\hspace*{-.3cm}
+   		\begin{tabular}{m{2.5cm}m{12.0cm}}          
+          \includegraphics[height=3cm,width=2.5cm]{jamc.png} &
+          \begin{flushleft}
+          \small{\bf Journal of Advances in Mathematics and Computer Science
+          \bigskip\\       
+XX(X): 1-16, 2019; Article no.JAMCS.54013}\\
+           \footnotesize\fontsize{7}{1}{\it{ISSN: 2456-9968}
+           \medskip\\
+           \it{(Past name: British Journal of Mathematics \& Computer Science, Past ISSN: 2231-0851)}}
+          \end{flushleft}
+        \end{tabular}%
+   }
+}
+
+\renewcommand{\headrulewidth}{1pt}
+\newcommand{\HRule}{\rule{\linewidth}{1pt}}
+
+
+
+
+\renewcommand{\thefootnote}{}
+\setlength{\oddsidemargin}{1pt} \setlength{\evensidemargin}{1pt}
+\setlength{\hoffset}{-1in} \addtolength{\hoffset}{35mm}
+\setlength{\textwidth}{140mm} 
+\setlength{\marginparsep}{0pt} \setlength{\marginparwidth}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\voffset}{-2in} \addtolength{\voffset}{20mm}
+\setlength{\textheight}{200mm}
+\setlength{\headheight}{45mm}
+\setlength{\headsep}{5mm}
+\setlength{\footskip}{15mm}
+
+\fancyhead{} \fancyfoot{}
+
+
+
+
+\input{preamb1}
+\newcommand{\eps}{\varepsilon}
+
+\title{Large deviation for perturbed reflected diffusion processes driven by a fractional brownian motion In Hölderian Norm}
+\author{Randrianomenjanahary Rado Abraham \\
+Department of Mathematics \\
+University of Antananarivo \\
+101 Antananarivo, Madagascar \\
+abakeely@gmail.com \\
+and \\
+Rabeherimanana Toussaint Joseph \\
+Department of Mathematics \\
+University of Antananarivo \\
+101 Antananarivo, Madagascar \\
+rabeherimanana.toussaint@gmx.fr \\
+}
+\begin{document}
+\maketitle
+%\input{body}
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+In this paper we establish a large deviation for perturbed reflected diffusion processes driven by a fractional brownian motion for any Hurst parameter $H \in(1/2, 1)$ using the method of Azencott in Holderian norm. 
+\mss
+{\bf Key Words:} Hölderian Norm, fractional brownian motion, large deviations \\\\\\
+
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%section1
+\section{Introduction}
+
+	In recent years, many results on the fractional brownian motion (Fbm for short) have been obtained. This process was introduced by Kolmogorov \cite{kolmogorov} and studied by Mandelbrot and Van Ness \cite{mandelbrot}, where a stochastic integral representation in terms of a standard Brownian motion was obtained \cite{bohdan_david}. Actually, many phenomena in telecommunication network, mathematical finance, filtering theory, biology, etc., are modeled by fractional Brownian motion \cite{constatin_tudor}. It is well known that the fBm is not Markovian, nor a 
+semimartingale, but has a long-range dependence and it is self-similar. 
+
+There are several attempts to construct a stochastic calculus with respect to fBm, such as: sample paths theory, semimartingale approach and the Skorohod integral. SDE with respect to fBm are considered in [6], [3]. Such stochastic equations are of Volterra type with a weakly regular kernel and are not covered by standard stochastic Volterra equations as treated for example in Berger and Mizel [4], Protter [18]. \\
+
+Large deviations for stochastic equations driven by semimartingales are by now 
+well known (see Azencot [1], Baldi and Chaleyat-Maurel [2], Cutland [7], Dozzi 
+[10], Freidlin and Wentzell [11], Liptser and Pukhalskii [14], Nualart and Rovira 
+[15], Perez-Abreu and Tudor [16], Priouret [17], Rovira and  Sanz-Solé [19]). \\
+
+%Bo et Zhang [5], obtained the large deviation principle of the solutions for %the following perturbed diffusion and perturbed reflected diffusion equations
+In this paper, we consider a diffusion processes $X =(X_t),  t \geq 0$ 1-dimensional solution of stochastic differential equation (SDE):
+
+\begin{equation} \label{eq01}
+	X_t=  x_0 + \int_0^t b(X_s) \ ds+\sqrt{\eps}\ \int_0^t  \sigma(X_s) \ dW^H_s + \beta \sup_{0\ie s \ie t} X_t, \quad  H > 1/2, \quad  t\in [0,1]
+\end{equation}
+
+and
+
+\begin{equation} \label{eq02}
+	T_t=  y + \int_0^t a(T_s) \ dW_s + \beta \sup_{0\ie s \ie t} T_t + \L_t ,\quad   \quad  t\in [0,1]
+\end{equation}
+
+where $\alpha \in [0,1] , x \in \mathbb{R}, y \in \mathbb{R}_{+}$ are deterministic, $b, \sigma : \mathbb{R} \longrightarrow \mathbb{R} $ and $ a : \mathbb{R}_{+} \longrightarrow \mathbb{R} $ are bounded Lipschitz continuous function, $\{L_t,t\in [0,1]\}$ is non-decreasing with $l_0$ and 
+
+\begin{equation} \label{eq03}
+	\int_0^t \chi_{\{ y_s = 0  \}} \ dL_s  = \L_t
+\end{equation}
+
+We may think of $\{ \L_t, t\in [0,1]   \}$ the local time of the semimartingale $\{ T_t, t\in [0,1]   \}$ at point zero. $\{ W^H_t, t\in [0,1]   \}$ is a fractional Brownian motion (fBm) of Hurst parameter H $\in$ (0,1) and $\{ W_t, t\in [0,1]   \}$ 1D standard Brownian motion on a completed probability
+space $(\Omega,\mathcal{F},(\mathcal{F})_{t \geq 0},\mathbb{P})$ 
+
+For $\alpha \in ]0,1/2[$, let $C^{\alpha, 0} ([0,1] , \mathbb{R}) $ be the separable space of $\alpha$-Hölder continuous functions from $[0,1]$ to $\mathbb{R}$. Consider the small noise perturbations of $\eqref{eq01}$ and  $\eqref{eq02}$
+
+\begin{equation} \label{eq011}
+	X^{\varepsilon}_t=  x_0 + \int_0^t b(X^{\varepsilon}_s) \ ds+\sqrt{\eps}\ \int_0^t  \sigma(X^{\varepsilon}_s) \ dW^H_s + \beta \sup_{0\ie s \ie t} X^{\varepsilon}_t, \quad  H > 1/2, \quad  t\in [0,1]
+\end{equation}
+
+and
+
+\begin{equation} \label{eq012}
+	T^{\varepsilon}_t=  y + \int_0^t \sigma(T^{\varepsilon}_s) \ dW^H_s + \beta \sup_{0\ie s \ie t} T^{\varepsilon}_t + L_t ,\quad   \quad  t\in [0,1]
+\end{equation}
+
+The aim of this paper is to establish for $\alpha \in ]0,1/2[ $ and $\beta \in ]0,1[ $ (resp. $\alpha \in ]0,1/2[ $ and $\beta \in ]0,1/2[ $) a large deviation principle (LDP) for the laws of $X^{\varepsilon}$  (resp. $T^{\varepsilon}$ ) solution of $\eqref{eq011}$ (resp. $\eqref{eq012}$) in $C^{\alpha} ([0,1] , \mathbb{R}) $ by using the classical Azencott's method.\\
+
+The special case $\beta \equiv 0 $  was studied by Freidlin \& Wentzell  \cite{fre1} se also refered to Varadhan \cite{var1}, Azencott   \cite{azencott} and Stroock  \cite{str1} with the usual topology  uniform, Ben Arous and Ledoux \cite{ben} have developed a large deviation principle(LDP) in $C^{\alpha, 0} ([0,1] , \mathbb{R}) $. \\
+
+Doss and Priouret $\cite{doss_prioret}$ considered the LDP for the small noise perturbations of reflected diffusions, through checking uniform Freidlin–Ventzell estimates. Further, Millet et al. $\cite{millet_nualart}$ used the Freidlin–Ventzell estimates to obtain the LDP of a class of anticipating stochastic differential equations. Recently, Mohammed and Zhang $\cite{mohamed_zhang}$ studied a LDP for small noise perturbed family of stochastic systems with memory.\\
+
+When $H =1/2$ the fBm becomes the standard Brownian motion, the perturbed reflected Brownian motion was first introduced by Le Gall and Yor [7,8], and subsequently studied by Carmona et al. [2,3], Perman and Werner [11] and Chaumont and Doney [4] and Bo and Zhang [5]. L.I.Rajaonarison  and Rabeherimanana $\cite{liliane_toussaint}$ . Our approach will be based on a classical result of Azencott \cite{azencott} with uniform topology.
+
+
+The rest of the paper is organized as follows. Section 1 contains some preliminary definitions and general results. Section 2 is for the LDP of perturbed diffusion processes. The large deviation estimates for the perturbed reflected diffusion processes are shown in Section 3.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%2
+\section{Preliminary definitions and results}
+\subsection{Preliminary definitions}
+
+\begin{definition}
+	A rate function is a function $ I: \Xi \longrightarrow [0;+\infty] $ on a Hausdorff topological space $\Xi$ which is lower semi-continuous, ie. where all the level set $ \Gamma_a =\{ x \in \Xi , I(x)\leq a\}$ are closed in $\Xi$. A rate function $ I: \Xi \longrightarrow [0;+\infty] $ is called a good rate function, if all the level set $\{ x \in \Xi , I(x)\leq a\}$ for $a \geq 0$ are compact in $\Xi$
+\end{definition}
+
+\begin{definition}
+	A family $ \{ P^\varepsilon\}_{\varepsilon>0}$ of probabilities measures on Hausdorff topological space  $ \Xi $ is satisfies the large deviation principle (or shorter LDP) with rate function $ I: \Xi \longrightarrow [0;+\infty] $, if the following two estimates hold: 
+	\begin{enumerate}
+		\item[i)] (Lower bound.) For every open subset $ \mathcal{O} $ of $ \Xi $ 
+		\[\liminf_{\varepsilon \longrightarrow 0}\varepsilon \log P_\varepsilon (\mathcal{O}) \geq -I(\mathcal{O})\]
+		\item[ii)] (Upper bound.) For every closed subset $ \mathcal{F} $ of $ \Xi $ 
+		\[\limsup_{\varepsilon \longrightarrow 0}\varepsilon \log P_\varepsilon (\mathcal{F}) \leq -I(\mathcal{F})\]
+	\end{enumerate}
+\end{definition}
+Now, we give a new formulation for the contraction principle which will be needed later.
+\begin{lemma}\label{lem27}
+	Let $(E_x, d_x), (E_y, d_y), (E_z, d_z), (E, d)$ denote Polish spaces and $(\Omega,\mathcal{F},\mathbb{P})$ be a probability space. 
+	
+	Suppose that $ (X^\varepsilon, \varepsilon > 0)$ is a family of random variables with values in $E_x$ satisfing a LDP with a  rate function $I_x$, and $(Y^\varepsilon, \varepsilon > 0)$ a random variable with values in $E_y$ satisfing a LDP with a  rate function $I_y$. 
+
+	Suppose that for each $ \varepsilon > 0$, $X^\varepsilon$ is independent of $Y^\varepsilon$ then the family of random variable $Z = F (X^\varepsilon,y^\varepsilon)$ satisfing a LDP with  rate function $I_F(z)$ defined by \smallskip\\
+	$$I_F(z)=\inf_{F(x,y) = z} \Big\{ I_x(x) + I_y(y) \Big\} $$
+	where $F:E_x \times E_y \rightarrow E_z$ is continuous.
+\end{lemma}
+
+As a reminder for Azencott's method 
+
+\begin{proposition}
+let ($E_i$,$d_i$), $i=1,2$ be two Polish spaces and $X_\varepsilon^i\rightarrow\ E_i$, $\varepsilon > 0 , i=1, 2$ two families of random variables. Assume that  $\{X_1^\varepsilon$ , $\varepsilon >0\}$  satisfies a LDP with rate function $I_1 : E_1 \rightarrow [0, + \infty] $. Let $\Phi : \{ I_1 < \infty \} \rightarrow E_2$ be a mapping such that its restriction to the compact sets $\{I_1 \leq  a  \}$ is continuous in the topology of $E_1$. For any $g \in E_2$ we set $I(g) = \text{Inf} \ \Big\{I_1(f), \Phi(f) = g \Big\}$. Suppose that for $R, \rho, a > 0$ there exist $\alpha$ and $\varepsilon_0>0$ such that for any $h \in E_1 $ satisfying $I_1(h) \leq a $ and $\varepsilon \leq \varepsilon_0$ we have 
+
+\end{proposition}
+ 
+\begin{equation}
+		P \Big\{ d_2 ( X_2^\varepsilon , \Phi(h) ) \geq \rho, d_1 (X_1^\varepsilon,h) \leq \alpha  \Big\} \leq \text{exp} (- \frac{R}{\varepsilon^2})
+\end{equation}
+Then the family $\{X_2^\varepsilon, \varepsilon >0\}$ satisfies a LDP with rate function $I$.
+
+\begin{equation}
+		I(g) = Inf \{ I_1(h) ;  \Phi(h) = g    \}
+\end{equation}
+Let us now introduce some function spaces that will be used in the analysis of solutions of the stochastic differential equation $\eqref{eq01}$
+
+\subsection{Hölderian norm}
+
+For  $\alpha \in ]0,1/2[$, we define the $\alpha-$Hölder space $C^{\alpha} ([0,1] , \mathbb{R})$ as the space of continuous functions $f$ such that
+
+\begin{equation} \label{eq04}
+	\parallel f\parallel_{\alpha}=\sup_{0\leq |t-s| \leq 1}\frac{|f(t)-f(s)|}{|t-s|^{\alpha}} < \infty
+\end{equation}
+Define the Hölderian modulus of continuity of $f$ by 
+\begin{equation} \label{eq05}
+	W_{\alpha}(f,\delta) = \sup_{0\leq |t-s| \leq \delta}\frac{|f(t)-f(s)|}{|t-s|^{\alpha}} 
+\end{equation}
+It is well known that $C^{\alpha} ([0,1] , \mathbb{R})$ is not separable but its closed subspace, defined by 
+
+\begin{equation} \label{eq06}
+	C^{\alpha,0} ([0,1] , \mathbb{R}) = \{ f \in C^{\alpha} ([0,1] , \mathbb{R}); \lim_{\delta \to 0 } W_{\alpha}(f,\delta) =0  \}
+\end{equation}
+is separable. Both $C^{\alpha} ([0,1] , \mathbb{R})$ and $C^{\alpha,0} ([0,1] , \mathbb{R})$ 	are Banach spaces for the norm $\parallel f\parallel_{\alpha}$
+and $\parallel f\parallel_{\infty}$. It is well known that $P (\parallel W\parallel_{\alpha} < \infty ) = 1 $ for $ 0 < \alpha < 1/2 $
+It is a remarkable fact that 
+
+\begin{equation} \label{eq06bis}
+	\parallel f\parallel_{\infty} \ \leq \  \parallel f\parallel_{\alpha}
+\end{equation}
+
+\subsection{Fractional Brownian motion}
+We consider $\mathcal{W} = \{ x\in C ([0,1] , \mathbb{R}) : x(0) = 0 \}$ equipped with the  
+supremum norm. We denote by $\mathcal{W}' $ the strong topological dual of $\mathcal{W}$. For $H \in
+(0,1)$ we denote by $P_H$ the unique probability measure on $\mathcal{W}$ such that the canonical process $\{W^H_t\}_{t\in [0,1]} $ is a fBm with Hurst parameter $H$. Recall that the covariance $R_H$ of $W$ is given by
+\beq
+R_H(s,t)=\mf{C_H}{2}\Big(s^{2H}+t^{2H}-|t-s|^{2H}\Big),
+\eeq
+\beq
+C_H=\mf{\Gamma(2-2H)\cos\pi H}{\pi H(1-2H)}
+\eeq
+In order to represent the fBm in terms of standard Brownian motion (obtained 
+for $H = \mf12$)  we need hypergeometric functions. \\
+We consider the Gauss hypergeometric function $F(\la, \be, \ga, z)$ which is the analytic continuation on $C \x C \x C \backslash \{0, -1, -2,\dots\}\x\{ z \in C : \Arg(1- z) < \pi$ of the power series 
+\beq
+	F(\la, \be, \ga, z)=\msum_{k=0}^\infty \mf{(\al)_k(\be)_k}{(\ga)_kk!}\ z^k,
+\eeq
+$(a)_k = a(a + 1)....(a+ k- 1)$.\\
+Define 
+\beq
+	K_H(t,r)=\mf{(t-r)^{H-\f12}}{\Ga(H+\f12)}\ 
+						F\Big(\mf12-H,H-\mf12,H+\mf12,1-\mf tr\Big)1_{[0,t)}(r).
+\eeq
+It is known that (see [9])
+\beq
+	R_H(t,s)=\mint_0^{t\wedge s}K_H(t,r)K_H(s,r)dr.
+\eeq
+Next we shall denote by $\nabla_H$ the Gross-Sobolev derivative operator, $\de_H$ its dual (divergence operator) and we define the stochastic integral with respect the fBm by 
+\beq
+\mint_0^1 u_s\de_H W_s=\de_H(K_Hu),
+\eeq
+for processes $u$ for which $K_Hu$ is in the domain of $\de_H$. 
+
+\begin{remarque}
+It is known that (see [9]) 
+\begin{enumerate}[(i)]
+	\item $\Big\{\mint_0^1 K_H(t,s)\de_H W_s\Big\}_{t\in T}=\{W_t\}_{t\in T}$.
+	\item $\Big\{\mint_0^1 1_{[0,t]}\de_H W_s\Big\}_{t\in T} := \{B\}_{t\in T}$  is a standard Brownian motion on $(\mathcal{W}, \mathcal{B} (\mathcal{W}), P_H)$. 
+	\item For every $u\in  L^2(\mathcal{W} \x [0,1])$, $u$ adapted, 
+$$
+	\mint_0^t u_s\de_H W_s = \mint_0^t u_s dB_s,\ t\in [0,1],
+$$
+(the last integral is the usual Itô integral). 
+	\item  We have the following representation for the fBm 
+$$
+	W_t=\mint_0^t K_H(t,s) dB_s,\ t\in [0,1].
+$$
+\end{enumerate}
+\end{remarque}
+
+\subsection{Preliminaries results}
+The following LDP proved by Baldi et al. (1992) extends the classical Schilder theorem (see Schilder 1996; Deuschel and Strook 1989)
+
+
+\begin{theorem}
+		Let $P^\varepsilon$ be the law of $\sqrt{\varepsilon}w$ on $C([0,1] , \mathbb{R})$ equipped with the norm $\| . \|_{\infty}$ satisfying the LDP with the good rate function $\lambda(.)$ defined by:
+		$$
+			\lambda(h)=\lt\{
+				\begin{array}{ll}
+						\displaystyle\f{1}{2}\int_0^T |\dot h(s)|^2\ ds&\text{if }h\in \mathcal{H}\smallskip\\
+						+\infty&\text{otherwise}
+				\end{array}
+			\rt.
+		$$
+\end{theorem}
+One of the basic tools in large deviation theory is the 'contraction principle' (see Deuschel and Strook 1989). It enables the new rate function to be computed after the data have been transformed by a continuous map $ \cite{mel1}$.
+\begin{theorem}
+	Let $Q^\varepsilon$ be a family of probability measure  on a Polish space E and satisfies the LDP with a good rate function $\lambda$.\\
+	Let $F: E\rightarrow E'$ be countinuous. Denote by $Q^\varepsilon=P^\varepsilon\circ F^{-1}$ the family of image measure of $P^{\varepsilon}$, then $\{Q^\varepsilon\}$ satisfies the LDP with a good rate function $\tilde{\lambda}$ defined by 
+	$$\tilde{\lambda}(y)=\inf_{x: F(x)=y}\lambda(x).$$ 
+\end{theorem}
+
+
+\begin{lemma}
+Let $\{f(t)\}_{t\in T} $ be a bounded nonanticipating real process and $0 <\al< H$. Then, for any $a > 0$, 
+\beq
+P\lt(
+\Big[
+\mint_0^. K_H(.,s)f(s)dB_s
+\Big]_\al> a
+\rt)\ie
+C_1\exp\{-(aC_2-1)^2\},
+\label{lemma2.8}
+\eeq
+where $0<C_i=C_i(\al,H,\|f\|_\infty)<\infty$.\\
+In particular
+\beq
+P\lt(
+\sup_{0\ie t\ie 1}\Big|
+\mint_0^t K_H(t,s)f(s)dB_s
+\Big|> a
+\rt)\ie
+C_1\exp\{-(aC_2-1)^2\}
+\label{lemma2.9}
+\eeq
+\end{lemma}
+For the proof of this result we refer to $\cite{constatin_tudor}$
+\section{Main results}
+
+\subsection{LDP for perturbed diffusion processes}
+In this section, we will give a LDP of the perturbed diffusion process solution of $\eqref{eq011}$. Let $\mathcal{H}$ be  the Cameron–Martin space associated to the standard Brownian motion, that is
+
+\begin{equation} \label{eq08}
+	\mathcal{H}=\lt\{
+	\begin{array}{c}
+		h:[0,1]\rightarrow \R, h \text{ is absolutely continuous such that}\\
+		h(0)=0\text{ and }\displaystyle\int_0^1|\dot{h}_s|^2\ ds<+\infty
+	\end{array}\rt\}
+\end{equation}
+Let $\Phi^{x}(h)(t)$ be the unique solution of the following deterministic perturbed equation:
+
+\begin{equation} \label{eq09}
+	\Phi^{x}(h)(t)=  x_0 + \int_0^t K_H(t,s) \ b(\Phi^{x}(h)(s)) \ ds+\sqrt{\eps}\ \int_0^t  K_H(t,s) \  \sigma(\Phi^{x}(h)(s)) \  \dot{h}(s) \  ds+ \beta \sup_{0\ie s \ie t} \Phi^{x}(h)(s)
+\end{equation}
+We have the following main result
+\begin{theorem}\label{eq10}
+		For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1[ $. Let  $\{\eta_{\varepsilon},\varepsilon >0  \}$ be the probability measure induced by $x^{\varepsilon}$ on $C^{\alpha} ([0,1] , \mathbb{R})$ equipped with the norm $\| . \|_{\alpha}$ , then $\eta_{\varepsilon}$ satisfying the LDP with the good rate function $I(.)$ defined by:
+\end{theorem}
+\begin{equation} 
+	 I(g) =  \inf_{h \in H ; g= \Phi^{x}(h) } \lambda(h)
+	 \label{eq11}
+\end{equation}
+where the inf over the empty set is taken to be $\infty$.
+\begin{theorem}\label{12}
+	For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1[ $ and $h \in \mathcal{H}$. For any $R, \delta, a >0$ there exist $\rho > 0 $ such that
+	$$\mathbb{P}\bigg(\parallel X^\varepsilon- \Phi^{x}(h) \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon}w-h \parallel_{\infty}  <\delta\bigg)\leq \exp(-\frac{R}{\varepsilon}).$$
+\end{theorem}
+By $\eqref{eq04}$ and $\eqref{eq09}$,
+$$	\begin{array}{lcl}
+			X_t^\varepsilon-\Phi^{x}(h)(t) &= & \displaystyle \int_{0}^{t}\sigma_H(X_s^\varepsilon)\ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)
+
+			\\
+			&+ & \displaystyle \int_{0}^{t}\sigma_H(X_s^\varepsilon)\ - \sigma_H(\Phi^{x}(h)(s)) \dot{h}(s) ds
+			\\
+			&+ & \displaystyle \int_{0}^{t}b_H(X_s^\varepsilon)\ - b_H(\Phi^{x}(h)(s)) \  ds
+			\\
+			&+ & \beta ( \sup_{0\ie s \ie t}X^{\varepsilon}_s - \sup_{0\ie s \ie t} \Phi^{x}(h)(s))
+	\end{array}
+$$
+Where $\sigma_H(x) = K_H(t,s) \ \sigma(x)$ and $b_H(x) = K_H(t,s) \ b(x)$\\
+Consequently,
+
+$$	\begin{array}{lcl}
+			|X_t^\varepsilon-\Phi^{x}(h)(t)| &\leq & \displaystyle \int_{0}^{t}| \sigma_H(X_s^\varepsilon)\ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)|
+
+			\\
+			&+ & L \ \displaystyle \int_{0}^{t}   |X_s^\varepsilon\ - \Phi^{x}(h)(s)| \ |K_H(t,s)| \ (1 + |\dot{h}(s)| ) \ ds
+			
+			\\
+			&+ & \beta  \sup_{0\ie s \ie t}| X^{\varepsilon}_s - \Phi^{x}(h)(s)|
+	\end{array}
+$$
+Where $L>0$ is the Lipschitz coefficient, and we also used the fact that
+\begin{equation} 
+	 \big|\sup_{0\ie s \ie t}u(s)-\sup_{0\ie s \ie t}v(s)\big| \leq \sup_{0\ie s \ie t}\big|u(s)-v(s)\big|
+	 \label{eq11}
+\end{equation}
+For any two continuous functions $u$ and $v$ on $\mathbb{R}_{+}$. Thus, it follows from that, for $t \in [0,1]$
+
+$$	\begin{array}{lcl}
+			|X_t^\varepsilon-\Phi^{x}(h)(t)| & \leq  \frac{1}{1-\beta} & \displaystyle \int_{0}^{t}| \sigma_H(X_s^\varepsilon)\ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)|
+
+			\\
+			& + \frac{L}{1-\beta} &  \displaystyle \int_{0}^{t} |X_s^\varepsilon\ - \Phi^{x}(h)(s)| \ |K_H(t,s)| \ (1 + |\dot{h}(s)| ) \ ds
+			
+
+	\end{array}
+$$
+By the  Gronwall lemma and Cauchy-Swartz inequality  this yields that
+
+$$	\begin{array}{lcl}
+			|X_t^\varepsilon-\Phi^{x}(h)(t)| & \leq  \frac{1}{1-\beta} & \displaystyle \int_{0}^{t}| \sigma_H(X_s^\varepsilon)\ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)|
+
+			\\
+			& \text{x}  & \text{exp} \big( \displaystyle \int_{0}^{t} \frac{L}{1-\beta} \  |K_H(t,s)| \ (1 + \big|\dot{h}(s)\big| ) \ ds \big)
+			
+			\\
+			& \leq C_1(h) \  & \displaystyle \int_{0}^{t}| \sigma_H(X_s^\varepsilon)\ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)|
+			
+	\end{array}
+$$
+Where $C_1(h) = 1/(1-\beta) \  \text{exp}( D L (1+\parallel h \parallel_\mathcal{H} )/(1-\beta) ) $ with $\parallel h \parallel_\mathcal{H} = \big(\displaystyle\int_0^1|\dot{h}_s|^2\ ds\big)^{1/2}$ for $h \in \mathcal{H}$ and when $H > 1/2$, since $t \leq 1$, we have \\
+
+$\bigg(\displaystyle \int_{0}^{t} |K_H(t,s)|^2 ds\bigg)^{1/2} \leq \bigg(\displaystyle \int_{0}^{t} c^2_H \ s^{1-2H} ds\bigg)^{1/2} \leq \bigg(\displaystyle \int_{0}^{1} c^2_H \ s^{1-2H} ds\bigg)^{1/2} = \frac{c_H}{\bigg(2(1-H)\bigg)^{1/2}} $.\\
+It suffices to take $D=\frac{c_H}{\bigg(2(1-H)\bigg)^{1/2}}$ \\
+By using the inequality $\eqref{eq06bis}$ and $h=0$, we get 
+\begin{equation}\label{eq12}
+	\parallel X_t^\varepsilon-\Phi^{x}(0)(t) \parallel_{\infty} \ \leq C_1(0) \parallel \displaystyle \int_{0}^{t}  \sqrt \varepsilon \ K_H(t,s) \ \sigma(X_s^\varepsilon)\ \ dW_s \parallel_{\alpha}
+\end{equation}
+For any $t \in [0,1]$, for any  continuous functions $f : [0,1] \rightarrow \R $, denote by \\
+\begin{equation} \label{eq13}
+	\parallel f\parallel_{\alpha,t}=\sup_{0\leq u \leq v \leq t}\frac{|f(u)-f(v)|}{|v-u|^{\alpha}} < \infty
+\end{equation}
+By the reflexion principle, we have
+$$	\begin{array}{lcl}
+			\frac{1}{|t-s|^\alpha} \ \Big|(X_t^\varepsilon-\Phi^{x}(0)(t))-(X_s^\varepsilon-\Phi^{x}(0)(s))\Big| & \leq  \frac{1}{|t-s|^\alpha} & \bigg( \Big|\sqrt \varepsilon \displaystyle \int_{0}^{t} \sigma_H(X_v^\varepsilon) \ dW_v
+
+			\\ \\
+			& \text{+} \frac{\beta}{1-\beta} &  \sup_{s \ie u \ie t} \Big(\sqrt \varepsilon \displaystyle \int_{s}^{u} \sigma_H(X_v^\varepsilon) \ dW_v + \int_s^u b(X_v^\varepsilon) \ dv \Big)
+			\\ \\
+			& \text{-} \frac{\beta}{1-\beta} &  \sup_{s \ie u \ie t} \displaystyle \int_s^u b(\Phi^{x}(0))(v) \ dv \Big| \bigg)	
+	\end{array}
+$$
+Consequently, we obtain :
+$$	\begin{array}{lcl}
+		  \parallel (X^\varepsilon-\Phi^{x}(0)) \parallel_{\infty} & \leq  \frac{1}{1-\beta} & \parallel \sqrt \varepsilon \displaystyle \int_{0}^{t} \sigma_H(X_v^\varepsilon) \ dW_v \parallel_{\alpha,t}
+
+			\\ \\
+			& \text{+} \frac{\beta L}{1-\beta} & \parallel  X^\varepsilon - \Phi^x(0)  \parallel_{\infty}
+			\\ \\ 
+			& \text{+} \frac{\beta L}{1-\beta} & \parallel \displaystyle \int_{0}^{t} X^\varepsilon - \Phi^x(0)   \parallel_{\alpha,0} \ dv	
+	\end{array}
+$$
+By using $\eqref{eq12}$, we get 
+$$	\begin{array}{lcl}
+		  \parallel (X^\varepsilon-\Phi^{x}(0)) \parallel_{\alpha} & \leq  (\frac{1}{1-\beta}+\frac{\beta C_1(0)  L}{1-\beta}) & \parallel \sqrt \varepsilon \displaystyle \int_{0}^{t} K_H(t,s) \sigma(X_v^\varepsilon) \ dW_v \parallel_{\alpha}
+
+			\\ \\ 
+			& \text{+} \frac{\beta L}{1-\beta} & \parallel \displaystyle \int_{0}^{t} X^\varepsilon - \Phi^x(0)   \parallel_{\alpha} \ dv	
+	\end{array}
+$$
+By the  Gronwall lemma
+\begin{equation} \label{eq14}
+	\parallel (X^\varepsilon-\Phi^{x}(0)) \parallel_{\alpha} \leq (\frac{1}{1-\beta}+\frac{\beta C_1(0)  L}{1-\beta})  \parallel \sqrt \varepsilon \displaystyle \int_{0}^{t} K_H(t,s) \sigma(X_v^\varepsilon) \ dW_v \parallel_{\alpha} \text{exp} (\frac{\beta L}{1-\beta})
+\end{equation}
+By an argument similar to that of the proof of (24), we obtain
+\begin{equation}\label{eq15}
+	\parallel X_t^\varepsilon-\Phi^{x}(h)(t) \parallel_{\infty} \ \leq C_1(h) \parallel \displaystyle \int_{0}^{t}  \sigma_H(X_s^\varepsilon)\ \bigg(\sqrt \varepsilon \ dW_s - \dot{h}(s) ds \bigg) \parallel_{\alpha}
+\end{equation}
+De même, de
+
+$$	\begin{array}{lcl}
+			\frac{1}{|t-s|^\alpha} \ \Big|(X_t^\varepsilon-\Phi^{x}(h)(t))-(X_s^\varepsilon-\Phi^{x}(h)(s))\Big| & \leq  \frac{1}{|t-s|^\alpha} & \bigg( \Big|\sqrt \varepsilon \displaystyle \int_{0}^{t} \sigma_H(X_v^\varepsilon) \ \bigg(\sqrt \varepsilon \ dW_s - \dot{h}(s) ds \bigg)
+
+			\\ \\
+			& \text{+} \frac{\beta}{1-\beta} &  \sup_{s \ie u \ie t} \Big(\sqrt \varepsilon \displaystyle \int_{s}^{u} \sigma_H(X_v^\varepsilon) \ dW_v + \int_s^u b(X_v^\varepsilon) \ dv \Big)
+			\\ \\
+			& \text{-} \frac{\beta}{1-\beta} &  \sup_{s \ie u \ie t} \displaystyle \int_s^u  \sigma_H(\Phi^{x}(h))(v) \ \dot{h}(v) 
+			\\ \\
+			&  \ \ \ \ \ \ \ \ \text{+} & b_H(\Phi^{x}(h))(v) \ dv \Big| \bigg)	
+	\end{array}
+$$
+An application of formula(27), we obtain
+$$	\begin{array}{lcl}
+		  \parallel (X^\varepsilon-\Phi^{x}(h)) \parallel_{\alpha,t} & \leq  \frac{1}{1-\beta} & \parallel \displaystyle \int_{0}^{t} \sigma_H(X_v^\varepsilon) \ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds) \parallel_{\alpha}
+
+			\\ \\
+			& \text{+} \frac{\beta L}{1-\beta} & (1+\parallel h \parallel_H)   \text{exp}(L \ (1+\parallel h \parallel_H) ) \parallel \displaystyle \int_{0}^{t} \sigma_H(X_v^\varepsilon) \ (\sqrt \varepsilon \ dW_s - \dot{h}(s) ds)  \parallel_{\alpha}
+			\\ \\ 
+			& \text{+} \frac{\beta L}{1-\beta} &  \displaystyle \int_{0}^{t} (1+|\dot{h}_s|) \parallel X^\varepsilon - \Phi^x(h)   \parallel_{\alpha,s} \ ds	
+	\end{array}
+$$
+By the  Gronwall lemma
+\begin{equation} \label{eq16}
+	\parallel (X^\varepsilon-\Phi^{x}(h)) \parallel_{\alpha} \leq (\frac{1}{1-\beta}+\frac{\beta  L (1+\parallel h \parallel_H) }{(1-\beta)^2})  \parallel \sqrt \varepsilon \displaystyle \int_{0}^{t} K_H(t,s) \sigma(X_v^\varepsilon) \ dW_v \parallel_{\alpha} \textbf{exp} \bigg(\frac{\beta L (1+\parallel h \parallel_H)}{1-\beta}\bigg)
+\end{equation}
+
+\begin{theorem}\label{17}
+	For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1[ $. For any $R, \delta, a >0$ there exist $\rho > 0 $ and $\varepsilon_0 >0$ such that, for any $h \in C^{\alpha} ([0,1] , \mathbb{R})$ satisfying $\lambda(h) \leq a$ and $\varepsilon \leq \varepsilon_0$
+	$$\mathbb{P}\bigg(\parallel K_H(t,s) \sigma (X_v^\varepsilon) \ \bigg(\sqrt \varepsilon \ dW_s - \dot{h}(s) ds \bigg) \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W_s -h \parallel_{\infty}  <\delta\bigg)\leq \exp\bigg(-\frac{R}{\varepsilon}\bigg).$$
+\end{theorem}
+For $\varepsilon > 0 $ , define a probability measure $\textbf{P}^{\varepsilon}$ on $\Omega$ by 
+\begin{equation} \label{eq18}
+\textbf{d}\textbf{P}^{\varepsilon} = Z_{\varepsilon} \textbf{d}\textbf{P}=\textbf{exp} \bigg(\frac{1}{\sqrt{\varepsilon}}\int_{0}^{1}\dot{h}_s\ dW_s-\frac{1}{\varepsilon}\int_{0}^{1}|\dot{h}_s|^2\ ds\bigg) \textbf{d}\textbf{P}
+\end{equation}
+Then, Girsanov's theorem implies that $\{W_t^\varepsilon = W_t-\frac{1}{\sqrt{\varepsilon}}\dot{h_t}, , t \in [0,1]  \}$ is a  Wiener process with respect to the probability $\textbf{P}^{\varepsilon}$ \\ \\
+Let $\{U^\varepsilon_t, 0\leq t\leq 1\}$ be the solution of SDE
+
+\begin{equation}
+U^{\varepsilon}(t)=  x_0 + \int_0^t K_H(t,s) \ b(U^{\varepsilon}(s)) \ ds+\sqrt{\eps}\ \int_0^t  K_H(t,s) \  \sigma(U^{\varepsilon}(s)) \  \dot{h}(s) \  ds+ \beta \sup_{0\ie s \ie t} U^{\varepsilon}(s)
+\label{19}
+\end{equation}
+To simplify the notation, set for any $\rho$ ,$\alpha$, $\varepsilon$ $> 0$
+$$A^\varepsilon=\Big\{\parallel K_H(t,s) \sigma (X_v^\varepsilon) \ \bigg(\sqrt \varepsilon \ dW_s - \dot{h}(s) ds \bigg) \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W_s -h \parallel_{\infty}  <\delta\Big\}$$ 
+Then by the Cauchy-Swartz inequality,
+\begin{equation*}
+		P(A^\varepsilon) = \displaystyle \int_{\Omega} Z^{-1}_\varepsilon \chi_{\{A^\varepsilon(w)  \}} \textbf{P}^\varepsilon(dW) \leq \bigg(\displaystyle \int_{\Omega} Z^{-2}_\varepsilon(w)\textbf{P}^\varepsilon(dW)  \bigg)^{1/2} \bigg ( \textbf{P}^\varepsilon(A^\varepsilon)  \bigg)^{1/2}
+\end{equation*}
+An application of formula(27), we obtain
+$$	\begin{array}{lcl}
+		  \displaystyle \int_{\Omega} Z^{-2}_\varepsilon(w)\textbf{P}^\varepsilon(dW) & =  \textbf{E}_{\textbf{P}\varepsilon}\bigg[ \textbf{exp} \bigg(-\frac{2}{\sqrt{\varepsilon}}\displaystyle \int_{0}^{1}\dot{h}_s\ dW_s+\frac{2}{\varepsilon}\int_{0}^{1}|\dot{h}_s|^2\ ds\bigg) \textbf{d}\textbf{P} \bigg]
+
+			\\ \\
+			& = \textbf{E}_{\textbf{P}\varepsilon}\bigg[ \textbf{exp} \bigg(-\frac{2}{\sqrt{\varepsilon}}\displaystyle \int_{0}^{1}\dot{h}_s\ dW_s+\frac{1}{\varepsilon}\int_{0}^{1}|\dot{h}_s|^2\ ds\bigg) \textbf{d}\textbf{P} \bigg]& \times  \textbf{exp} \bigg( \frac{1}{\varepsilon} \displaystyle \int_{0}^{1}|\dot{h}_s|^2\ ds \bigg)
+
+	\end{array}
+$$
+Finally, we obtain
+\begin{equation*}
+		\displaystyle \int_{\Omega} Z^{-2}_\varepsilon(w)\textbf{P}^\varepsilon(dW) = \textbf{exp} \bigg( \frac{1}{\varepsilon} \parallel h \parallel_H^2 \bigg)
+\end{equation*}
+Therefore, if $\lambda(h) \leq a $ then \\
+\begin{equation*}
+		P(A^\varepsilon) \leq \textbf{exp} \bigg(  \frac{a}{\varepsilon} \bigg) (\textbf{P}^\varepsilon(A^\varepsilon))^{1/2}
+\end{equation*}
+Therefore,
+$$	\begin{array}{lcl}
+		  \textbf{P}^\varepsilon(A^\varepsilon) & =  \textbf{P}^\varepsilon\bigg(\parallel K_H(t,s) \sigma (X_v^\varepsilon) \ \bigg(\sqrt \varepsilon \ dW_s - \dot{h}(s) ds \bigg) \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W_s -h \parallel_{\infty}  <\delta\bigg)
+			\\ \\
+			& =  \textbf{P}^\varepsilon\bigg(\parallel K_H(t,s) \sigma (X_v^\varepsilon)  \sqrt \varepsilon \ dW^\varepsilon_s  \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W^\varepsilon_s -h \parallel_{\infty}  <\delta\bigg)
+			\\ \\
+			& = \textbf{P}\bigg(\parallel K_H(t,s) \sigma (X_v^\varepsilon)  \sqrt \varepsilon \ dW_s  \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W_s -h \parallel_{\infty}  <\delta\bigg)
+	\end{array}
+$$
+
+\begin{theorem}\label{20}
+	For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1[ $. For any $R, \delta, a >0$ there exist $\rho > 0 $ and $\varepsilon_0 >0$ such that, for any $h \in C^{\alpha} ([0,1] , \mathbb{R})$ satisfying $\lambda(h) \leq a$ and $\varepsilon \leq \varepsilon_0$
+	$$\textbf{P}\bigg(\parallel \displaystyle \int_{0}^{t}  K_H(t,s)  \ \sqrt \varepsilon \ \sigma (U_s^\varepsilon)\ \ dW_s  \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ W_t -h \parallel_{\infty}  <\delta\bigg)\leq \exp\bigg(-\frac{R}{\varepsilon}\bigg).$$
+\end{theorem}
+For any $n \in \mathbb{N^*}$ we consider the approximation sequence of the process $U^\varepsilon$ defined by 
+
+\begin{equation*}
+		 U^{\varepsilon,n}_t = U^{\varepsilon}_{\frac{j}{n}}, if \ s \in [\frac{j}{n}, \frac{j+1}{n}[ \ \ for \ \ all \ j=0, 1, 2, ..., n-1
+\end{equation*}
+For $\alpha>0$ and for every $n\in \mathbb{N}$, we have
+	$$A^\varepsilon=\Big\{\parallel \sqrt{\varepsilon}\int_{0}^{.} \ K_H(t,s) \sigma( Y_s^\varepsilon)\ dW_s^\varepsilon \parallel_{\alpha}\geq \rho, \parallel\sqrt{\varepsilon} W^\varepsilon\parallel_{\infty} \leq \alpha\Big\}\subset A_1^\varepsilon\cup A_2^\varepsilon\cup A_3^\varepsilon$$
+	where  
+	$$\left\{\begin{array}{l}
+		A_1^\varepsilon=\Big\{\displaystyle\parallel\sqrt{\varepsilon}\int_{0}^{.}K_H(t,s)\ [\sigma(U_s^\varepsilon)-\sigma(U_s^{\varepsilon, n})]dW^\varepsilon_s\parallel_{ \alpha}\geq \frac{\rho}{2}, \parallel U^\varepsilon-U^{\varepsilon, n}\parallel_{\infty} \leq \gamma\Big\}\\
+		A_2^\varepsilon=\Big\{\parallel U^\varepsilon-U^{\varepsilon, n}\parallel_{\infty} \geq \gamma\Big\}\\
+		A_3^\varepsilon=\Big\{\displaystyle\parallel \sqrt{\varepsilon}\int_{0}^{.}K_H(t,s)\ \sigma(U_s^{\varepsilon, n})\ dW_s^\varepsilon \parallel_{\alpha}\geq \frac{\rho}{2}, \parallel\sqrt{\varepsilon} W^\varepsilon \parallel_{\infty} \leq \delta \Big\}
+	\end{array}\right.$$
+On the set $\{ \parallel U^\varepsilon-U^{\varepsilon, n}\parallel_{\infty} \leq \gamma  \}$, we have the following estimates 
+$\parallel\sqrt{\varepsilon}[\sigma(U_s^\varepsilon)-\sigma(U_s^{\varepsilon, n})]\parallel_{\alpha}\leq \sqrt{\varepsilon} L\gamma$ and by Lemma 2.8, it follows that
+
+\begin{equation*}
+		P(A_1^\varepsilon) \leq \textbf{exp}\bigg\{-\bigg(\frac{\rho}{2\sqrt{\varepsilon}L\delta}K_2-1\bigg)^2\bigg\}
+\end{equation*}
+To treat $P\Big(A_3^\varepsilon\Big)$. On the set $\{\parallel\sqrt{\varepsilon} W^\varepsilon \parallel_{\infty} \leq \delta \}$, we get
+\begin{eqnarray*}
+		\parallel\sqrt{\varepsilon}\int_{0}^{t} K_H(t,s) \sigma(U_s^{\varepsilon, n})\ dW_s^\varepsilon \parallel_{\alpha} & = &\sqrt{\varepsilon}\parallel\sum_{j=0}^{n-1} \ K_H(t,t_{j+1}) \ \sigma(U^{\varepsilon, n}_{t_j})[W^\varepsilon(t_{j+1}\wedge.)-W^\varepsilon(t_j\wedge.)]\parallel_{\alpha}\\ & \leq & \sqrt{\varepsilon} \sum_{j=0}^{n-1}\ K_H(1,t_{j+1}) \  \sigma(U^{\varepsilon, n}_{t_j}) \parallel[W^\varepsilon(t_{j+1})-W^\varepsilon(t_j)]\parallel_{\infty}\\ & \leq &  \ L  \ \delta \ \bigg(\sum_{j=0}^{n-1} \ (K_H(1,t_{j+1}))^2\bigg)^{1/2}\\ & = &  \ L \ \delta \bigg(\sum_{j=0}^{n-1} \ c_H^2 \ t_{j+1}^{1-2H}\bigg)^{1/2}
+\\ & = &  \ L \ \delta \ c_H \bigg(\frac{n^{2(1-H)}-1}{2n^{(1-2H)}(1-H)}\bigg)
+^{1/2}\end{eqnarray*}
+where $L>0$ is a common bound of $b$ and $\sigma$.\\ \\
+Therefore, if $\delta \leq   \frac{\rho \ \sqrt{1-H} \ n^{\frac{1}{2}-H}}{\sqrt{2} \ L \ c_H \ (n^{2(1-H)}-1) } $ then $P(A_3^\varepsilon) = 0 $ \\ \\
+By using the formula (2.17) in Bo and Zhang $\cite{bozhang}$, we have 
+\begin{equation*}
+		P(A_2) \leq n \ \textbf{exp}\bigg\{- \frac{n \ \gamma^2 (1-\beta)^2 }{8L^2\varepsilon}\bigg\}
+\end{equation*}
+
+\begin{prop}
+		Let $\alpha \in ]0,\frac{1}{2}[$ and $\beta \in ]0,1[$ be. For any $a \leq 0$, the map $F : \mathbb{R}_{+} \times C^{\alpha} ([0,1] , \mathbb{R}) \cap \bigg(\bigg\{ h \in \mathcal{H} : \parallel h \parallel^2_\mathcal{H} \leq a \bigg\}\bigg) \longrightarrow C^{\alpha} ([0,1] , \mathbb{R}) $ is continuous
+\end{prop}
+	
+\subsection{LDP for perturbed reflected diffusion processes}
+In this section, we will prove the LDP for the solution of the perturbed reflected diffusion equation $\eqref{eq02}$ \\
+For $y \geq 0$ and $f \in C_y([0,1],\mathbb{R}_+)$ as the space of continuous functions in $[0,1]$ to $\mathbb{R}$ starting from $y$.\\ 
+Define two operators $\Gamma : C_y([0,1],\mathbb{R}) \longrightarrow C_y([0,1],\mathbb{R}_+) $ and $K : C_y([0,1],\mathbb{R}) \longrightarrow C_y([0,1],\mathbb{R}_+)$ by $\Gamma f = f + \tilde{f}$ and $K f = \tilde{f}$, where $\tilde{f} = -\inf_{ s \leq t} (f(s) \wedge 0)$, $t \in [0,1]$
+By the reflection principle, the solution  $T^\varepsilon$ of $\eqref{eq012}$ is given by 
+\begin{equation}
+		T_t^\varepsilon = (\Gamma Z^\varepsilon)(t) \ \text{and} \ L^\varepsilon_t = (K Z^\varepsilon)(t), \ t \in [0,1]
+\end{equation}
+Where $Z^\varepsilon$ is a solution of the following stochastic equation
+\begin{equation}
+		Z^\varepsilon = y + \sqrt{\varepsilon} \displaystyle \int_{0}^{t} \sigma(\Gamma Z^\varepsilon)(t) ) dW^H_s + \beta \sup_{0\ie s \ie t} (\Gamma Z^{\varepsilon}_s )  \ t \in [0,1]
+\end{equation}
+For $h \in \mathcal{H}$, let $\tilde{\Phi}^y(h)$ the unique solution of the following equation:
+\begin{equation}
+		\tilde{\Phi}^y(h)(t) = y + \sqrt{\varepsilon} \displaystyle \int_{0}^{t} K_H(t,s)\sigma(\Gamma \tilde{\Phi}^y(h))(s) ) \dot{h}_s ds + \beta \sup_{0\ie s \ie t} (\Gamma \tilde{\Phi}^y(h)(s) )+\eta_t  \ t \in [0,1]
+\end{equation}
+where $\tilde{\Phi}^y(h)$ is continuous, non-negative and $\eta$ is an increasing continuous function satisfying $\eta_t = \int_0^t \chi_{\{ \tilde{\Phi}^y(h) = 0  \}} \ d\eta_s $. The existence and uniqueness of the solution to (33) might be obtained by Theorem 3.1 and Theorems 4.2 and 4.3 in $\cite{bozhang}$\\
+Similar as (3.1), $\tilde{\Phi}^y(h)$ can also be written as
+\begin{equation}
+		\tilde{\Phi}^y(h)(t) = (\Gamma V(h))(s) \ \text{and} \ \eta_t = (K V(h))(s), \ t \in [0,1]
+\end{equation}
+Where $V(h)$ is a solution of the following stochastic equation
+\begin{equation}
+		V(h)(t) = y + \sqrt{\varepsilon} \displaystyle \int_{0}^{t} K_H(t,s) \sigma(\Gamma V(h)(s) ) \dot{h}_s \ ds + \beta \sup_{0\ie s \ie t} (\Gamma V(h)(s) )  \ t \in [0,1]
+\end{equation}
+Let $\nu^1_\varepsilon$ be the law of $Z^\varepsilon$ on $ C_y ([0,1] , \mathbb{R}_+)$ equipped  with the Hölderian norm $\parallel . \parallel_\alpha$
+We have the following main result
+\begin{theorem}\label{eq10}
+For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1/2[ $. Let  $\{\nu^1_\varepsilon,\varepsilon >0  \}$ be the probability measure induced by $Z^{\varepsilon}$ on $C_y ([0,1] , \mathbb{R}_+)$ equipped with the norm $\| . \|_{\alpha}$ , then $\nu^1_\varepsilon$ satisfying the LDP with the good rate function $\tilde{I}_y(.)$ defined by:
+\end{theorem}
+\begin{equation} 
+	 \tilde{I}_y(g) =  \inf_{h \in \mathcal{H} ; g= \tilde{\Phi}^{x}(h) } \lambda(h)
+	 \label{eq11}
+\end{equation}
+Where the $\inf$ over the empty set is taken to be $\infty$
+\begin{theorem}\label{eq10}
+For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1/2[ $. Let  $\{\nu^2_\varepsilon,\varepsilon >0  \}$ be the probability measure induced by $T^{\varepsilon}$ on $C_y ([0,1] , \mathbb{R}_+)$ equipped with the norm $\| . \|_{\alpha}$ , then $\nu^2_\varepsilon$ satisfying the LDP with the good rate function $\bar{I}_y   (.)$ defined by:
+\end{theorem}
+\begin{equation} 
+	 \bar{I}_y(g) =  \inf_{\bar{g}= \Gamma g } \tilde{I}_y(g)
+	 \label{eq11}
+\end{equation}
+Where the $\inf$ over the empty set is taken to be $\infty$
+\begin{proof}
+By contraction principle, similar as Anderson et Orey[1], it suffices to prove that $\Gamma$ is continuous $\alpha$-hölderian. \\
+Recall that $\parallel \Gamma \psi_1 -  \Gamma \psi_2 \parallel_\infty \leq \parallel \psi_1 -  \psi_2 \parallel_\infty$
+$$	\begin{array}{lcl}
+			\frac{\parallel \Gamma \psi_1 -  \Gamma \psi_2 \parallel_\alpha}{\parallel \psi_1 -  \psi_2 \parallel_\alpha} &\leq & \frac{| (\Gamma \psi_1(t) -  \Gamma \psi_2(t)) - (\Gamma \psi_1(s) -  \Gamma \psi_2(s))|}{| \psi_1 -  \psi_2 |}
+
+			\\
+			&+ & \frac{2 \parallel \psi_1 - \psi_2 \parallel_\infty + 2 \parallel \psi_1 - \psi_2 \parallel_\infty}{\parallel \psi_1 - \psi_2 \parallel_\infty} = 4		
+	\end{array}
+$$
+It follows $\parallel \Gamma \psi_1 -  \Gamma \psi_2 \parallel_\alpha \leq 4 \parallel \psi_1 -  \psi_2 \parallel_\alpha $
+\end{proof}
+we deduce that the proof of (2.5.9) reduces to check that
+\begin{theorem}\label{12}
+	For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1/2[ $ and $h \in \mathcal{H}$. For any $R, \rho  >0$ there exist $ \delta > 0 $ such that
+	$$\mathbb{P}\bigg(\parallel Z^{\varepsilon,y}- V^{y}(h) \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon}w-h \parallel_{\infty}  <\delta\bigg)\leq \exp(-\frac{R}{\varepsilon}).$$
+\end{theorem}
+\begin{theorem}\label{20}
+	For $\alpha \in ]0,1/2[ , \ \beta \in ]0,1[ $. For any $R,\rho >0$ there exist $\delta > 0 $ and $\varepsilon_0 >0$ such that, for any $\varepsilon$ small enough
+	$$\textbf{P}\bigg(\parallel \displaystyle \int_{0}^{t}  K_H(t,s)  \ \sqrt \varepsilon \ \sigma (\Gamma Z_s^{\varepsilon,y}(s))\ \ dW_s  \parallel_{\alpha}>\rho,  \parallel \sqrt{\varepsilon} \ w \parallel_{\infty}  <\delta\bigg)\leq \exp\bigg(-\frac{R}{\varepsilon}\bigg).$$
+\end{theorem}
+For any $n \in \mathbb{N^*}$ we consider the approximation sequence of the process $Z^\varepsilon$ defined by 
+
+\begin{equation*}
+		 Z^{\varepsilon,n}_t = Z^{\varepsilon}_{\frac{j}{n}}, if \ s \in [\frac{j}{n}, \frac{j+1}{n}[ \ \ for \ \ all \ j=0, 1, 2, ..., n-1
+\end{equation*}
+For $\alpha>0$ and for every $n\in \mathbb{N}$, we have
+	$$\tilde{A}^\varepsilon=\Big\{\parallel \sqrt{\varepsilon}\int_{0}^{.} \ K_H(t,s) \sigma( Y_s^\varepsilon)\ dW_s^\varepsilon \parallel_{\alpha}\geq \rho, \parallel\sqrt{\varepsilon} W^\varepsilon\parallel_{\infty} \leq \delta \Big\}\subset \tilde{A}_1^\varepsilon\cup \tilde{A}_2^\varepsilon\cup \tilde{A}_3$$
+	where  
+	$$\left\{\begin{array}{l}
+		\tilde{A}_1^\varepsilon=\Big\{\displaystyle\parallel\sqrt{\varepsilon}\int_{0}^{.}K_H(t,s)\ [\sigma(\Gamma Z_s^\varepsilon)-\sigma(\Gamma Z_s^{\varepsilon, n,y})]dW^\varepsilon_s\parallel_{ \alpha}\geq \frac{\rho}{2}, \parallel Z^\varepsilon-Z^{\varepsilon, n,y}\parallel_{\infty} \leq \gamma\Big\}\\
+		\tilde{A}_2^\varepsilon=\Big\{\parallel Z^{\varepsilon,y}-Z^{\varepsilon, n,y}\parallel_{\infty} \geq \gamma\Big\}\\
+		\tilde{A}_3^\varepsilon=\Big\{\displaystyle\parallel \sqrt{\varepsilon}\int_{0}^{.}K_H(t,s)\ \sigma(\Gamma Z_s^{\varepsilon, n,y})\ dW_s^\varepsilon \parallel_{\alpha}\geq \frac{\rho}{2}, \parallel\sqrt{\varepsilon} W^\varepsilon \parallel_{\infty} \leq \delta \Big\}
+	\end{array}\right.$$
+By the result obtained in Bo and Zhang $\cite{bozhang}$, we have
+\begin{equation*}
+		 P(\tilde{A}^\varepsilon_2) \leq n \ \text{exp}\bigg(-\frac{n\gamma  (1-2\beta)^2 }{8N^2\varepsilon}\bigg)
+\end{equation*}
+For any $R, \gamma >0$ there exist  $\tilde{\varepsilon}_0 >0$ and  $\tilde{n}_0 >0$ such that if  $\varepsilon \leq \tilde{\varepsilon}_0$ and $n \geq \tilde{n}_0$
+\begin{equation*}
+		 P(\tilde{A}^\varepsilon_2) \leq  \ \text{exp}\bigg(-\frac{R}{\varepsilon}\bigg)
+\end{equation*}
+By Lemma 1.2 et (3.9),
+\begin{equation*}
+		 P(\tilde{A}^\varepsilon_1) \leq C \ \text{exp}\bigg(-\frac{\rho^2}{16L\gamma^2\varepsilon}\bigg)
+\end{equation*}
+The proof follows closely that in [4]
+\subsection{Existence and uniqueness of solution}
+%The existence and uniqueness of the solution to (3.2)
+%might be obtained by Theorem 3.1 and Theorems 4.2 and 4.3 in [5]
+\begin{lemma}
+	The equation $\eqref{eq09}$ has a unique solution
+\end{lemma}
+\begin{proof}
+If $\Phi^{(1)}(h)$ and $\Phi^{(2)}(h)$ are continuous solutions of $\eqref{eq09}$ then it follows
+\begin{equation*}
+	|\Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)| \leq L \displaystyle \int_{0}^{t}  |K_H(t,s)| \phi_s ds + \beta  \sup_{0\ie s \ie t}| \Phi^{(1)}(h)(s) - \Phi^{(2)}(h)(s)|
+\end{equation*}
+Where 
+\begin{equation*}
+	\phi_s = |\Phi^{(1)}(h)(s) - \Phi^{(2)}(h)(s)| \bigg(1+\dot{h}_s\bigg)
+\end{equation*}
+By Gronwall Lemma, we get
+\begin{equation*}
+	|\Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)| \leq \text{exp} \big( \displaystyle \int_{0}^{1} \frac{L}{1-\beta} \  |K_H(t,s)| \ (1 + \big|\dot{h}(s)\big| ) \ ds \big)
+\end{equation*}
+Of course, by Cauchy-Swartz inequality we obtain
+\begin{equation*}
+	 \displaystyle \int_{0}^{1} |K_H(t,s)| \ (1 + \big|\dot{h}(s)\big| ) \ ds  \leq (1+\parallel h \parallel_H) (\displaystyle \int_{0}^{1} |K_H(t,s)|^2 ds)^{1/2} = D < \infty
+\end{equation*}
+Define for $p \geq 1$,
+\begin{equation*}
+	 K^{p}_n(t,s) = \displaystyle \int_{0}^{t}|K_H(t,s)|^p ds_1 \ \displaystyle \int_{0}^{s_1}|K_H(s_1,s_2)|^p ds_2 \ ... \ \displaystyle \int_{0}^{s_{n-1}}|K_H(s_{n-1},s_n)|^p ds_n
+\end{equation*}
+Then iterating () and using Lemma () of we obtain
+\begin{equation*}
+	 | \Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)| \leq  L^n D K^{(1)}_{n-1}(t)
+\end{equation*}
+There exist a constant $L'$ such that 
+\begin{equation*}
+	 \parallel \Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)\parallel_\alpha \leq L' \parallel \Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)\parallel_\infty
+\end{equation*}
+Thus,
+\begin{equation*}
+	 \parallel \Phi^{(1)}(h)(t) - \Phi^{(2)}(h)(t)\parallel_\alpha \leq L' C D
+\end{equation*}
+For the existence we use the successive approximations. Define \\
+\begin{equation*} 
+	\Phi^{n}_t=  x_0 + \int_0^t K_H(t,s) \ b(\Phi^{n-1}_t) \ ds+\sqrt{\eps}\ \int_0^t  K_H(t,s) \  \sigma(\Phi^{n-1}_t) \  \dot{h}(s) \  ds+ \beta \sup_{0\ie s \ie t} \Phi^{n-1}_s
+\end{equation*}
+Denote by $D_n(t) = \parallel \Phi^{n+1}_t - \Phi^{n}_t \parallel_\alpha$ the we have
+\begin{equation*} 
+	D_0(t) \leq \displaystyle \int_{0}^{t}|K_H(t,s)| (1+\dot{h}_s) ds < \infty
+\end{equation*}
+\begin{equation*} 
+	D_n(t) \leq \displaystyle \int_{0}^{t}|K_H(t,s)| \ D_{n-1}(s) \ (1+\dot{h}_s) ds < \infty
+\end{equation*}
+And by iteration 
+\begin{equation*} 
+	D_n(t) \leq   L^n D K^{(1)}_{n-1}(t)
+\end{equation*}
+Then we deduce that $D_n(t) \longrightarrow D(t) $ uniformly in $t$ and $D$ is the solution of $\eqref{eq09}$ 
+\end{proof}
+	
+
+
+\begin{thebibliography}{2} 
+   \bibitem[1]{azencott} R. Azencott, Large deviations and applications, Lecture Notes, t. 774,Springer-Verlag.
+   \bibitem[2]{constatin_tudor} Constantin Tudor, On the large deviations for stochastic differential equation driven by fractional brownian motion
+    \bibitem[3]{belly} S.Belly and L.Decreusefond: Multi-dimensional fraction Brownian motion and some applications to queueing theory. In: Fractals in Engineering(C.Tricot, J. Levy, Eds.), 1997 .
+    \bibitem[4]{bohdan_david}Bohdan Maslowskia,1 and David Nualart, Evolution equations driven by a fractional
+Brownian motion
+	\bibitem[5]{kolmogorov}Kolmogorov, A.N. 1940. Wienershe Spiralen und einige andere interessante Kurven im Hilbertschen Raum. C. R. (Doklady) Acd. Sci. URSS (N.S.) 26:115-118
+	\bibitem[6]{mandelbrot} Mandelbrot, B.B., and Van Ness, J.W. 1968. Fractional Brownian motions,
+fractional noises and applications. SIAM Review 10(4):422-437.
+	\bibitem[6] {lcyoung} L.C. Young. An Inequality of Holder Type Connected with Stieljes Integration. Acta Math.(67) :251-282, 1936.
+	\bibitem[7] {lcoutin} L.Coutin and L.Decreusefond: Stochastic differential equations driven by a fractional Brownian motion. Preprint, 2000
+	
+	\bibitem[8] {bozhang} Bo (L.)  Zhang (T.). Large deviations for perturbed reflected diffusion processes, Stochastics, 81; 6 (2009), pp. 531-543
+	
+	\bibitem[9]{fre1} M.I. Freidlin \& A.D. Wentzell, Random perturbations of dynamical systems, Springer-Verlag, 1984.
+	
+	\bibitem[10]{var1} Varadhan (S.R.S.), Large deviations and applications. SIAM, Philadelphia, 1984.
+	
+	\bibitem[11]{str1} Strook (D.W.), An introduction to the theory of large deviation. Spring-Verlag, Berlin, 1984.
+	
+	\bibitem[12]{ben} G.Ben Arous \&  C. Ledoux , Large Freidlin-Wentzell deviations in
+Hölderian norm, Lecture Notes in Mathematics, Vol. 1583. Springer, Berlin, pp. 293-299 (1994).
+
+	\bibitem[13]{ben} G.Ben Arous \&  C. Ledoux , Large Freidlin-Wentzell deviations in
+Hölderian norm, Lecture Notes in Mathematics, Vol. 1583. Springer, Berlin, pp. 293-299 (1994).
+
+	\bibitem[14]{liliane_toussaint} Rajaonarison  \& Rabeherimanana (T.J.). Principe de grandes déviations des diffusions réfléchies perturbées en norme höldérienne
+	
+	\bibitem[15]{belly}S.Belly and L.Decreusefond: Multi-dimensional fractional Brownian motion and some applications to queueing theory. In : Fractals in Engineering (C.Tricot, J. Levy, Eds.), 1997
+	
+	\bibitem[16]{lcoutin} L. Coutin and L. Decreusefond : Stochastic differential equations driven by a fractional Brownian motion. Preprint, 2000
+	
+	\bibitem[17]{berger} M.Berger and V.Mizel: Voltera equations with Itô integrals-I. J. Integral Equations 2(1980), 187-245
+	
+	\bibitem[18]{protter} P.Protter: Voltera equations driven by semimartingales. Annals of Probability 12,3 (1985), 519-530.
+	
+	\bibitem[19]{baldi_maurel} P.Baldi and M.
+	
+	\bibitem[20]{mel1} M. Mellouk, A large deviation principle for random evolution equations, Bernouilli 6 n\textsuperscript{o} 6 (2000), p. 977-999.
+	
+	\bibitem[21]{doss_prioret} H. Doss and P. Priouret, Petites perturbations de systems dynamiques avec reflexion, Lecture
+Notes in Mathematics, 986, Springer, New York, NY, 1983.
+
+	\bibitem[22]{millet_nualart} A. Millet, D. Nualart, and M. Sanz, Large deviations for a class of anticipating stochastic differential equations, Ann. Probab. 20(4) (1992), pp. 1902–1931.
+
+	\bibitem[23]{mohamed_zhang} A. Mohammed and T. Zhang, Large deviations for stochastic systems with memory, Disc. Contin. Dyn. Sys.-Series B 6(4) (2006), pp. 881–893.
+	
+\end{thebibliography} 
+\end{document}
+
+\beq
+
+\label{x}
+\eeq

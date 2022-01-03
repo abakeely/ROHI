@@ -1,0 +1,12 @@
+<ul>
+    <li><a href="/userfiles/file/Remboursement.JPG" target="_blank" title="Remboursement des frais m&eacute;dicaux"><span>Remboursement des frais m&eacute;dicaux : &quot;</span></a><a href="/userfiles/file/Remboursement.JPG" target="_blank" title="Remboursement des frais m&eacute;dicaux"><span>des analyses, des hospitalisations durant la grossese et &agrave; l'accouchement&quot;</span></a></li>
+    <li><a href="/userfiles/file/ESP(1).pdf" target="_blank"><span>Communiqu&eacute; sur l'extension du syst&egrave;me de pointage &eacute;lectronique au niveau de neuf (09) sites d'Antananarivo</span></a></li>
+    <li><a href="/userfiles/file/communique/Reouverture-de-la-prise-en-charge-directe-au-niveau-de-l-IPM.jpg" target="_blank"><span>R&eacute;ouverture de la prise en charge directe au niveau de l'Institut Pasteur de Madagascar</span></a></li>
+    <li><a href="/userfiles/file/Remboursement%20des%20frais%20m%C3%83%C2%A9dicaux%20et%20de%20lunetterie.jpg" target="_blank" title="Note n&deg;45-2016-MFB/SG/DAAF/SLC"><span>Remboursement des frais m&eacute;dicaux et de lunetterie</span></a></li>
+    <li><a href="/userfiles/file/D%C3%83%C2%A9mat%C3%83%C2%A9rialisation.pdf" target="_blank" title="Note N&deg;132-2016/MFB/SG/DRHA"><span>Note n&deg;132-2016/MFB/SG/DRHA relative &agrave; la d&eacute;mat&eacute;rialisation du processus d'&eacute;valuation des agents du MFB</span></a></li>
+    <li><a target="_blank" title="Evaluation mensuelle des agents du MFB" href="/userfiles/file/Note%20d'%C3%83%C2%A9valuation.pdf"><span>Note n&deg;122-2016/MFB/SG/DRHA relative &agrave; l'&eacute;valuation mensuelle des agents du MFB</span></a></li>
+    <li><a title="Faux et usage de faux dipl&ocirc;me" target="_blank" href="/userfiles/file/Faux%20et%20usage%20de%20faux%20dipl%C3%83%C2%B4me.pdf"><span>Note n&deg;121-2016/MFB/SG/DRHA relative aux faux et usage de faux dipl&ocirc;me</span></a></li>
+    <li><a href="/userfiles/file/note%20fixant%20conge.jpg" target="_blank"><span>Note fixant le r&eacute;gime des cong&eacute;s, des permissions et des autorisations d'absence des fonctionnaires</span></a></li>
+    <li><a href="/userfiles/file/note%20relative%20a%20la%20suspension%20des%20recrutements.jpg" target="_blank"><span>Note relative &agrave; la suspension des recrutements</span></a></li>
+    <li><a href="/userfiles/file/offre/Formation%20Professionnelle%20Dipl%C3%83%C2%B4mante%20en%20Attach%C3%83%C2%A9%20d'Administration%20INFA%202016.pdf" target="_blank"><span>INFA&nbsp;2016</span></a></li>
+</ul>
