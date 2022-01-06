@@ -1,1 +1,0 @@
-http://192.168.17.11/com.dggfpe.com.rest/dggfpe/webControllerTFicRecap/json/tFicRecapByParameter/agent_matricule,%MATRICULE%,String_SEPARATOR_mois,%MOIS%,String_SEPARATOR_exercice,%ANNEE%,String_SEPARATOR_nom_table,t_fic_recap%iAnneeS%%SPECIAL%%LASTPARAMETER%
